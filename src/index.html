@@ -8,6 +8,37 @@
     <script type="module" src="./index.js"></script>
   </head>
   <body>
-    <include src="./partials/example.html"></include>
+    <header class="hader">
+      <section class="top-header">
+        <div class="header__conainer container">
+          <p class="top-header__title">find image</p>
+        </div>
+      </section>
+
+      <section>
+        <div class="header__conainer container">
+          <form action="" class="form">
+            <input 
+            class="search-input"
+            type="text"
+            name="query"
+            autocomplete="off"
+            placeholder="Search images...">
+            <button type="submit">click me</button>
+          </form>
+        </div>
+      </section>
+
+    </header>
+
+    <main>
+      <section>
+        <div class="container">
+          <ul class="list"></ul>
+          <button class="load-more">load more</button>
+        </div>
+      </section>
+    </main>
+    <!-- <include src="./partials/example.html"></include> -->
   </body>
 </html>
