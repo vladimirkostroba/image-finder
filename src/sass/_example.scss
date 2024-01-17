@@ -1,0 +1,32 @@
+.list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.card{
+    width: calc(25% - 12px);
+}
+
+.overlay{
+    transition: all 250ms linear;
+}
+
+.card:hover .overlay{
+    transform: scale(1.05);
+}
+
+.card-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+
+    gap: 4px;
+}
+
+.card-item{
+    font-size: 12px;
+    text-align: center;
+}
+
