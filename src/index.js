@@ -2,22 +2,25 @@ import apiService from "./js/apiService";
 import refs from './js/refs'
 import cardHandler from "./js/cardTemplate";
 
+import SimpleLightbox from 'simplelightbox';
+import "simplelightbox/dist/simple-lightbox.min.css";
+
 import { Notify } from 'notiflix/build/notiflix-notify-aio';
 
+let gallery = new SimpleLightbox('.list a');
+console.log(gallery);
 
+// 
 const errorMessage = 'Oops, no images found'
 
 refs.form.addEventListener('submit', function (e) {
     e.preventDefault();
     refs.list.innerHTML = '';
     apiService.reset();
-    console.log(refs.input);
     
     apiService.query = e.target.query.value;
 
-    fetchHandler()
-
-    
+    fetchHandler()  
 });
 
 refs.loadMore.addEventListener('click', function (e) {
@@ -39,9 +42,8 @@ function fetchHandler(){
         } 
 
         const markup = cardHandler(hits);
-        console.log(hits);
         refs.list.insertAdjacentHTML('beforeend',markup)
     })
     apiService.incrementPage()
-    console.log(apiService.page);
+    gallery.refresh()
 }
