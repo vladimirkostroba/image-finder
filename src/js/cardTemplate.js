@@ -1,9 +1,9 @@
 function cardHandler(arr){
     const markup = arr.map(({id,webformatURL,largeImageURL,tags,comments,likes,views,downloads}) => {
-        return `
+        return `<a href="${largeImageURL}">
         <li class="card" id="${id}">
         <div class="overlay">
-        <a href="${largeImageURL}"><img src="${webformatURL}" alt="${tags}"></a>
+        <img src="${webformatURL}" alt="${tags}">
         </div>
         
         <div class="card-info">
@@ -21,6 +21,7 @@ function cardHandler(arr){
         ${downloads}</p>
         </div>
         </li>
+        </a>
         `
     }).join('')
 

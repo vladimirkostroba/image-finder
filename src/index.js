@@ -2,13 +2,12 @@ import apiService from "./js/apiService";
 import refs from './js/refs'
 import cardHandler from "./js/cardTemplate";
 
-import SimpleLightbox from 'simplelightbox';
-import "simplelightbox/dist/simple-lightbox.min.css";
 
 import { Notify } from 'notiflix/build/notiflix-notify-aio';
 
-let gallery = new SimpleLightbox('.list a');
-console.log(gallery);
+
+
+console.log(refs);
 
 // 
 const errorMessage = 'Oops, no images found'
