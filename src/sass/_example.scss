@@ -14,7 +14,8 @@
 }
 
 .top-header{
-    background-color: rgb(120, 67, 169);
+    background-color: #4D4AE8;
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, .15), rgba(255, 255, 255, 0));
 }
 
 .top-header__title{
@@ -34,7 +35,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
 
+.form{
+    display: flex;
+    gap: 5px;
 }
 
 input{
@@ -56,6 +61,7 @@ button{
     display: flex;
     flex-wrap: wrap;
     gap: 16px;
+    margin-bottom: 20px;
 }
 
 .card{
@@ -89,6 +95,77 @@ button{
     text-transform: capitalize;
 }
 
+// 
+
+.button-20 {
+    appearance: button;
+    background-color: #4D4AE8;
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, .15), rgba(255, 255, 255, 0));
+    border: 1px solid #4D4AE8;
+    border-radius: 8px;
+    box-shadow: rgba(255, 255, 255, 0.15) 0 1px 0 inset,rgba(46, 54, 80, 0.075) 0 1px 1px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Inter,sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5;
+    margin: 0;
+    padding: .5rem 1rem;
+    text-align: center;
+    text-transform: none;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+  }
+  
+  
+  
+  .button-20:hover,
+  .button-20:focus {
+    background-color: #3733E5;
+    border-color: #3733E5;
+  }
+  
+  .load-more{
+      margin-left: auto;
+      margin-right: auto;
+  }
+  
+ 
+  .reset {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFFFF;
+    border: 1px solid rgb(209,213,219);
+    border-radius: 8px;
+    box-sizing: border-box;
+    color: #111827;
+    font-family: "Inter var",ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: .875rem;
+    font-weight: 600;
+    line-height: 1.25rem;
+    text-align: center;
+    text-decoration: none #D1D5DB solid;
+    text-decoration-thickness: auto;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .reset:hover {
+    background-color: rgb(249,250,251);
+  }
+  
 
 
 

@@ -1,13 +1,9 @@
 import apiService from "./js/apiService";
 import refs from './js/refs'
 import cardHandler from "./js/cardTemplate";
-
+import {openModal,closeModal} from './js/modal'
 
 import { Notify } from 'notiflix/build/notiflix-notify-aio';
-
-
-
-console.log(refs);
 
 // 
 const errorMessage = 'Oops, no images found'
@@ -44,5 +40,10 @@ function fetchHandler(){
         refs.list.insertAdjacentHTML('beforeend',markup)
     })
     apiService.incrementPage()
-    gallery.refresh()
+
 }
+
+//  modal
+
+refs.list.addEventListener('click', openModal);
+refs.button.addEventListener('click', closeModal);
