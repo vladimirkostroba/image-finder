@@ -13,7 +13,6 @@ export function openModal(e){
 
 
     document.addEventListener('keydown',onEscapeClose);
-    // document.addEventListener('keydown',scrollingImages);
 }
 
 // 
@@ -23,9 +22,6 @@ export function openModal(e){
 export function closeModal(){
     refs.modalImg.src = ''
     refs.modal.classList.remove('is-open');
-
-    // document.removeEventListener('keydown',onEscapeClose);
-    // document.removeEventListener('keydown',scrollingImages);
 }
 
 // Закрытие по Escape
